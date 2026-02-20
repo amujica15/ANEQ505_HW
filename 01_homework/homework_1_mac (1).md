@@ -169,7 +169,9 @@ Reads are ~ 253 bp long
 3. What is the maximum length of all your sequences?
 427 bp long
 4. Which sample (not including extraction controls starting with EC) lost the highest % of reads?
+2019.3.14.cow.fecal.14
 5. Why did you chose to trim or truncate where you did?
+I based where I trimmed based off of the quality score plots from the demultiplexed data. 
 
 **To submit your homework from this document:**
 write all of your commands here, then use command+P (for mac) or control+P (for windows) and search Git: commit. click it. then search for Git: Push and click it. go to your github online to check that it pushed correctly. we will check your github for homework credit. 
