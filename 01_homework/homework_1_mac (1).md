@@ -129,9 +129,9 @@ sbatch demux.sh
 qiime dada2 denoise-paired \
 --i-demultiplexed-seqs ../demux/demux_cow.qza \
 --p-trim-left-f 0 \
---p-trim-left-r NUMBER \
---p-trunc-len-f NUMBER \
---p-trunc-len-r NUMBER \
+--p-trim-left-r 0 \
+--p-trunc-len-f 250 \
+--p-trunc-len-r 250 \
 --p-n-threads 6 \
 --o-representative-sequences cow_seqs_dada2.qza \
 --o-denoising-stats cow_dada2_stats.qza \
@@ -140,22 +140,24 @@ qiime dada2 denoise-paired \
 #Visualize the denoising results:
 qiime metadata tabulate \
 --m-input-file cow_dada2_stats.qza \
---o-visualization YOUR_OUTPUT_FILENAME_HERE.qzv
+--o-visualization cow_dada2_stats.qzv
 
 qiime feature-table summarize \
 --i-table cow_table_dada2.qza \
 --m-sample-metadata-file ../metadata/cow_metadata.txt \
---o-visualization YOUR_OUTPUT_FILENAME_HERE.qzv
+--o-visualization cow_table_dada2.qzv
 
 qiime feature-table tabulate-seqs \
 --i-data cow_seqs_dada2.qza \
---o-visualization YOUR_OUTPUT_FILENAME_HERE.qzv
+--o-visualization cow_seqs_dada2.qzv
 ```
 
 	
 Briefly **describe** the key information from each denoising output file:
 1. Representative Sequences
+This output file includes ASV's post denoising. 4653 unique features were retained in this step with a mean length of 253.34 bp and a  max sequence length of 427 base pairs 
 2. Denoising Stats
+This output file includes summary statistics of read retention at each step. Most samples were retaining about 75-80% of their reads. 
 3. Denoised Table
 
 **Answer the following questions:**  
