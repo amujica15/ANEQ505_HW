@@ -159,11 +159,15 @@ This output file includes ASV's post denoising. 4653 unique features were retain
 2. Denoising Stats
 This output file includes summary statistics of read retention at each step. Most samples were retaining about 75-80% of their reads. 
 3. Denoised Table
+The denoised table will provide counts of samples (147), numbers of features (4,653) and reads retained (1,634,012)
 
 **Answer the following questions:**  
 1. What is the mean reads per sample?
+11,115.7 
 2. How long are the reads?
+Reads are ~ 253 bp long
 3. What is the maximum length of all your sequences?
+427 bp long
 4. Which sample (not including extraction controls starting with EC) lost the highest % of reads?
 5. Why did you chose to trim or truncate where you did?
 
