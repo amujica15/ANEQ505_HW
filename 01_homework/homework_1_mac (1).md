@@ -98,7 +98,7 @@ cd /scratch/alpine/$USER/cow/demux
 #Below is the command you will run to demultiplex the samples.
 
 qiime demux emp-paired \
---m-barcodes-file ../metadata/ADD BARCODE FILE NAME HERE \
+--m-barcodes-file ../metadata/cow_barcodes.txt \
 --m-barcodes-column barcode \
 --p-rev-comp-mapping-barcodes \
 --p-rev-comp-barcodes \
@@ -115,7 +115,7 @@ qiime demux summarize \
 
  Run the script in your slurm directory as a job using: 
  ```
- sbatch name of your script.sh
+ sbatch demux.sh
  ```
 
 8.    Denoise. 
@@ -123,11 +123,12 @@ qiime demux summarize \
 Fill in the blank to denoise your samples based on what you think should be trimmed (from the front of the reads) or truncated (from the ends of the reads) based on the demux_cow.qzv file. You can run this in the terminal or as a job.
 
 ```
-cd ADD PATH TO DADA2 DIRECTORY
+cd /scratch/alpine/c837903956@colostate.edu/cow/slurm  
+sbatch demux.sh
 
 qiime dada2 denoise-paired \
 --i-demultiplexed-seqs ../demux/demux_cow.qza \
---p-trim-left-f NUMBER \
+--p-trim-left-f 0 \
 --p-trim-left-r NUMBER \
 --p-trunc-len-f NUMBER \
 --p-trunc-len-r NUMBER \
