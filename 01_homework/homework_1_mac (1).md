@@ -170,7 +170,7 @@ Reads are ~ 253 bp long
 3. What is the maximum length of all your sequences?
 427 bp long
 4. Which sample (not including extraction controls starting with EC) lost the highest % of reads?
-2019.3.14.cow.fecal.14
+2019.3.14.cow.oral.
 5. Why did you chose to trim or truncate where you did?
 I based where I trimmed based off of the quality score plots from the demultiplexed data. because the last basepair dips below 30 on the quality score read, it will be truncated off. 
 
