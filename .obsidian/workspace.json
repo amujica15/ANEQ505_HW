@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "community plugins",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 278.5
   },
   "right": {
     "id": "b41d56012fafb950",
@@ -187,7 +187,7 @@
       "bases:Create new base": false
     }
   },
-  "active": "46d937ac1f98b42e",
+  "active": "2790a269d5336738",
   "lastOpenFiles": [
     "01_homework/homework_1_mac (1).md",
     "Test Note.md",
