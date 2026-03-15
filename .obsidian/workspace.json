@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01_homework/Untitled.md",
+                "file": "01_homework/homework_2_mac_VS (2).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "homework_2_mac_VS (2)"
             }
           }
         ],
@@ -93,7 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 431.5
+    "width": 200
   },
   "right": {
     "id": "b41d56012fafb950",
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01_homework/Untitled.md",
+                "file": "01_homework/homework_2_mac_VS (2).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Untitled"
+              "title": "Backlinks for homework_2_mac_VS (2)"
             }
           },
           {
@@ -193,7 +193,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -207,12 +208,13 @@
       "bases:Create new base": false
     }
   },
-  "active": "2790a269d5336738",
+  "active": "563436060bf11bb6",
   "lastOpenFiles": [
-    "01_homework/homework_3_pc.md",
     "01_homework/homework_2_PC_VS.md",
-    "01_homework/homework_1_mac (1).md",
+    "01_homework/homework_2_mac_VS (2).md",
     "01_homework/Untitled.md",
+    "01_homework/homework_3_pc.md",
+    "01_homework/homework_1_mac (1).md",
     "Untitled 1",
     "Untitled",
     "Untitled.md",
