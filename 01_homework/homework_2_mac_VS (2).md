@@ -102,7 +102,8 @@ qiime taxa barplot \
 ## Filtered Taxa Bar Plot Questions ~={red}(10 points)=~
 
 **Question 1**: Attach a picture of your taxa bar plot, organized by cow sampling location (body_site) at the level 7 taxonomic level. What general trends do you notice? ![[Screenshot 2026-03-15 at 1.49.18 PM.png]]
-
+Overall we are seeing differences between the different body sites. 
+> The microbial communities differ strongly between body sites. Fecal samples are dominated by a few bacterial classes, particularly Clostridia and Bacteroidia, which are typical of gut microbiomes. In contrast, nasal, oral, skin, and udder samples show more diverse and mixed microbial communities with many taxa present at lower relative abundances. This suggests that microbial composition varies depending on the environment of the body site.
 **_Question 2**: What are the top 2 most abundant bacterial **classes** in the fecal samples? 
 
 **_Question 3**: What highly abundant ASV is shared between both the udder and skin samples?
