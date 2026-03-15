@@ -106,9 +106,12 @@ Overall we are seeing differences between the different body sites. Fecal sample
 
 **_Question 2**: What are the top 2 most abundant bacterial **classes** in the fecal samples? 
 
-Clostridia and Bacterio
+Clostridia and Bacterioidia
+
 **_Question 3**: What highly abundant ASV is shared between both the udder and skin samples?
 
+ Actinomycetota, and Bacillota - staphylococcus 
+ 
 **_Question 4**: Which samples (still sorted by body_site) have higher alpha diversity in terms of observed features?
 
 **Question 5**: do all samples contain archaea as well?
