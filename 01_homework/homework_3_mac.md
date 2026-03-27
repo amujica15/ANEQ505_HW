@@ -24,7 +24,7 @@ Load qiime2 in a terminal session after you go into the **cow** folder
 ```
 # Insert the two commands to activate qiime2
 module purge 
-
+module load qiime2/2024.10_amplicon
 
 ```
 
@@ -38,8 +38,8 @@ qiime diversity alpha-rarefaction \
 --i-table dada2/cow_table_dada2_filtered300.qza \
 --m-metadata-file metadata/cow_metadata.txt \
 --o-visualization alpha_rarefaction_curves_16S.qzv \
---p-min-depth ADD MIN RAREFACTION DEPTH \
---p-max-depth ADD MAX RAREFACTION DEPTH
+--p-min-depth 1000\
+--p-max-depth 3000
 ```
 
 
@@ -47,10 +47,10 @@ qiime diversity alpha-rarefaction \
 
 ```
 qiime diversity core-metrics-phylogenetic \
---i-table INSERT FILTERED TABLE HERE \
---i-phylogeny INSERT FILE HERE \
---m-metadata-file INSERT FILE HERE \
---p-sampling-depth INSERT SEQ DEPTH HERE \
+--i-table dada2/table_nomitochloro_gg2_filtered300.qza \
+--i-phylogeny tree/tree_gg2.qza \
+--m-metadata-file metadata/cow_metadata.txt \
+--p-sampling-depth 3000 \
 --output-dir core_metrics_results
 ```
 
@@ -59,16 +59,19 @@ qiime diversity core-metrics-phylogenetic \
 - generate a plot to visualize the observed features ~={red}(1 point)=~
 ```
 qiime diversity alpha-group-significance \
---i-alpha-diversity core_metrics_results/FILENAME.qza \
+--i-alpha-diversity core_metrics_results/observed_features_vector.qza \
 --m-metadata-file metadata/cow_metadata.txt \
---o-visualization core_metrics_results/OUTPUT-FILENAME.qzv
+--o-visualization core_metrics_results/observed_features_statistics.qzv
 ```
 
 - generate a plot to visualize faith's PD ~={red}(2 points)=~
 ```
 ## insert the entire code chunk for generating this visualization 
 
-
+qiime diversity alpha-group-significance \
+--i-alpha-diversity core_metrics_results/faith_pd_vector.qza \
+--m-metadata-file metadata/cow_metadata.txt \
+--o-visualization core_metrics_results/faith_pd_statistics.qzv
 ```
 
 
@@ -86,15 +89,22 @@ Faiths looks at evolutionary relationships between taxa and measures richness us
 5. Which diversity metrics produced by the core-metrics pipeline require phylogenetic information?
 Faiths PD, weighted/unweighted UniFrac 
 6. Which two body sites have the highest Faiths PD alpha diversity?  Are the groups significantly different?
-Skin and oral samples have highest faith's PD but are not significant as the p
+Skin and oral samples have highest faith's PD but are not significant as the p value is quite high. 
 7. Does it seem like there are any groupings in the beta diversity? What are the groupings? 
+Yes, there are clear groupings in beta diversity. 
 8. Why do you think these samples are grouping together? 
+Likely because different sites are providing distinct environments where certain microbial taxa are able to succeed. 
 9. What test can you run to determine if the groups are significantly different?
+PERMANOVA
 10. What command would you use to run that test?
 
 ```
 #insert command for running the test you suggest from question 7
 
 
-
+qiime diversity beta-group-significance \
+--i-distance-matrix core_metrics_results/unweighted_unifrac_distance_matrix.qza \
+--m-metadata-file metadata/cow_metadata.txt \
+--m-metadata-column body_site \
+--o-visualization core_metrics_results/unweighted_unifrac_body_site_significance.qzv
 ```
