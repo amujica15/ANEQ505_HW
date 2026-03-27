@@ -127,13 +127,16 @@ We filter out all chloroplast-associated sequences to remove DNA contamination f
 **Question 7**: what is the difference between these two flags? 
 --p-exclude mitochondria,chloroplast,sp004296775 \
 --p-include c__ \
-P exclude removes unwanted taxa sequences from the
+P exclude removes unwanted taxa sequences from the data. Using p-includes taxa from a given level or lower (here that is the class level)
+
 **Question 8**: do the positive controls look the same as each other? Yes or No?
+Yes, they show similar trends and overall microbial composition 
 
 **Question 9**: Do the negative/extraction controls (Samples labeled as EC), look like the positive controls? Yes or no? 
+No
 
 **Question 10**: do the negative/extraction controls (Samples labeled as EC), look like the real samples? Yes or no?
-
+No
 ## Phylogenetic tree ~={red}(1point)=~
 
 Create a job script to run the phylogenetic tree building. Remember you must start a new terminal session, navigate to your slurm directory, and then submit the job. You do NOT need to start any other interactive sessions.This job will take about an hour. 
