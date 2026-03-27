@@ -114,14 +114,20 @@ Clostridia and Bacterioidia
  
 **_Question 4**: Which samples (still sorted by body_site) have higher alpha diversity in terms of observed features?
 
+Skin and udder samples have the highest alpha diversity because they contain more microbial taxa than fecal samples 
+
 **Question 5**: do all samples contain archaea as well?
 
+Archea are not present in all samples 
+
 **Question 6**: why do we filter out sp004296775?
+
+We filter out all chloroplast-associated sequences to remove DNA contamination from actual bacterial taxa 
 
 **Question 7**: what is the difference between these two flags? 
 --p-exclude mitochondria,chloroplast,sp004296775 \
 --p-include c__ \
-
+P exclude removes unwanted taxa sequences from the
 **Question 8**: do the positive controls look the same as each other? Yes or No?
 
 **Question 9**: Do the negative/extraction controls (Samples labeled as EC), look like the positive controls? Yes or no? 
