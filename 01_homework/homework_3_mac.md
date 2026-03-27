@@ -83,7 +83,7 @@ cow_table_dada2_filtered300.qzv
 2. what did you choose for the rarefaction depth (the input for core metrics -p-sampling-depth flag)? why? 
 3000 reads because that is where most samples have plateaued in the alpha rarefaction curves. 
 3. Which cow body location had more observed features? Which has the lowest?
-Skin and oral samples had highest number of observed features. 
+fecal had highest. Nasal had lowest 
 4. What is the main difference between Faiths PD and Shannons alpha diversity metrics?  
 Faiths looks at evolutionary relationships between taxa and measures richness using phylogenic trees where shannon looks at both richness and evenness but does not take phylogeny into account.
 5. Which diversity metrics produced by the core-metrics pipeline require phylogenetic information?
