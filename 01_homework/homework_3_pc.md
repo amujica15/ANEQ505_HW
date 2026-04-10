@@ -13,7 +13,7 @@ Due:
 ------------------------------------------------------------------
 **Learning Objectives**
 1. Practice recording commands and editing code to match your analysis.
-2. Perform alpha rarefaction and determine an appropriate sequencing depth.
+2. Perform alpha rarefaction and determi![[homework_4_mac (1)]]ne an appropriate sequencing depth.
 3. Run core metrics, generate plots for alpha and beta diversity
 --------------------------------------------------
 
