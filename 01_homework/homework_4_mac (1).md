@@ -162,13 +162,13 @@ qiime composition ancombc2-visualizer \
 1. Describe one way to get data from your qiime2 outputs into a format that can be used for R. 
 You can use the qiime tools export and convert into a .tsv file
 2. Which body site appeared most distinct in the taxa bar plot, meaning it was not similar to at least one of the other body sites? Explain why that site looks different. 
-
-3. When generating the filtered table for ANCOM-BC2, what value did you choose for `--p-min-frequency`? Which core metrics parameter should this match, and why do these values need to be the same? (Report your core metrics value here:     ___) 
-
+The nasal body site appeared to look very different from the fecal bar plot. Fecal samples had a lot more diversity of bacteria present and a different composition as well. 
+3. When generating the filtered table for ANCOM-BC2, what value did you choose for `--p-min-frequency`? Which core metrics parameter should this match, and why do these values need to be the same? (Report your core metrics value here:     
+I used 5000. This should match sampling depth. These values match so that there is consistancy across analyses 
 4. Why do we filter out samples with low frequency and low abundance ASVs?
-
+It reduces the noise and removes potential artifacts 
 5. What was the most enriched genus in skin compared to fecal, and what was the most depleted genus in skin compared to fecal (make sure adjusted p is set to less than 0.05)?
-	
+Fermicutes had the highest postitive log fold change. 
 
 ## Extra credit~={orange} (3 points)=~ generate a classification model to see how well we can predict cow body site
 
