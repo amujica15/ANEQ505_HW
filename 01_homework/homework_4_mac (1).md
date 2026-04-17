@@ -131,7 +131,7 @@ qiime taxa collapse \
 --i-table table_5k_abund.qza \
 --i-taxonomy ../taxonomy/taxonomy_gg2.qza \
 --p-level 5 \
---o-collapsed-table table_5k_abund_GENUS NUMBER.qza
+--o-collapsed-table table_5k_abund_6.qza
 ```
 
 
@@ -150,11 +150,11 @@ qiime composition ancombc2 \
 - Generate a barplot to visualize the differentially abundant features. 
 ```
 qiime composition tabulate \
---i-data INPUT FILE \
+--i-data ancombc2_barplot_bodysite_genus.qza \
 --o-visualization ancombc2_bodysite_genus.qzv
   
 qiime composition ancombc2-visualizer \
-  --i-data INPUT FILE \
+  --i-data ancombc2_barplot_bodysite_genus.qza \
   --o-visualization ancombc2_barplot_bodysite_genus.qzv
 ```
 
