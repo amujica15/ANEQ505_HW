@@ -109,7 +109,7 @@ qiime feature-table filter-samples \
 ```
 qiime feature-table filter-samples \
 --i-table table_nomitochlorocontrols_gg2_filtered300.qza \
---p-min-frequency YOUR NUMBER HERE \
+--p-min-frequency 5000 \
 --o-filtered-table table_5k.qza
 ```
 
