@@ -25,14 +25,14 @@
             "id": "562a35680759e37c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "01_homework/homework_4_mac (1).md",
-                "mode": "source",
-                "source": false
+                "aFile": "01_homework/homework_4_mac (1).md",
+                "bFile": "01_homework/homework_4_mac (1).md",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "homework_4_mac (1)"
+              "icon": "diff",
+              "title": "Diff: homework_4_mac (1)  (Working Tree)"
             }
           },
           {
@@ -204,8 +204,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -221,8 +220,8 @@
   },
   "active": "562a35680759e37c",
   "lastOpenFiles": [
-    "01_homework/Untitled.md",
     "01_homework/homework_4_mac (1).md",
+    "01_homework/Untitled.md",
     "homework_4_mac (1) 2.md",
     "homework_4_mac (1) 1.md",
     "01_homework/homework_3_pc.md",

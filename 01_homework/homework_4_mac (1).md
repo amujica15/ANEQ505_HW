@@ -117,7 +117,7 @@ qiime feature-table filter-samples \
 
 ```
 qiime feature-table filter-features \
---i-table INPUT TABLE \
+--i-table table_5k_abund_6.qza \
 --p-min-frequency 50 \
 --p-min-samples 20 \
 --o-filtered-table table_5k_abund.qza
@@ -130,7 +130,7 @@ qiime feature-table filter-features \
 qiime taxa collapse \
 --i-table table_5k_abund.qza \
 --i-taxonomy ../taxonomy/taxonomy_gg2.qza \
---p-level GENUS NUMBER \
+--p-level 5 \
 --o-collapsed-table table_5k_abund_GENUS NUMBER.qza
 ```
 
@@ -139,7 +139,7 @@ qiime taxa collapse \
 
 ```
 qiime composition ancombc2 \
---i-table table_5k_abund_GENUS NUMBER.qza \
+--i-table table_5k_abund_6.qza \
 --m-metadata-file cow_metadata_nocontrols.txt \
 --p-fixed-effects-formula body_site \
 --o-ancombc2-output ancombc2_results_bodysite_genus.qza
